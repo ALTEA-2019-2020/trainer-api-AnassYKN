@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>TP</groupId>
-    <artifactId>TP_JPA</artifactId>
+    <artifactId>trainer-api-AnassYKN</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
 

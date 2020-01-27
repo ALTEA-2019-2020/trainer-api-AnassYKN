@@ -5,6 +5,8 @@ import TP.repository.TrainerRepository;
 import TP.service.TrainerService;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class TrainerServiceImpl implements TrainerService {
 
@@ -20,8 +22,8 @@ public class TrainerServiceImpl implements TrainerService {
     }
 
     @Override
-    public Trainer getTrainer(String name) {
-        return trainerRepository.findById(name).get();
+    public Optional<Trainer> getTrainer(String name) {
+        return trainerRepository.findById(name);
     }
 
     @Override

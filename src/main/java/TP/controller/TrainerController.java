@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/trainers")
 public class TrainerController {
@@ -23,7 +25,7 @@ public class TrainerController {
     }
 
     @GetMapping("/{name}")
-    public Trainer getTrainer(@PathVariable String name){
+    public Optional<Trainer> getTrainer(@PathVariable String name){
       return this.trainerService.getTrainer(name);
     }
 }
