@@ -2,10 +2,7 @@ package TP.controller;
 
 import TP.bo.Trainer;
 import TP.service.TrainerService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
@@ -25,7 +22,26 @@ public class TrainerController {
     }
 
     @GetMapping("/{name}")
-    public Optional<Trainer> getTrainer(@PathVariable String name){
+    public Trainer getTrainer(@PathVariable String name){
       return this.trainerService.getTrainer(name);
     }
+
+    @PostMapping(value="/")
+    public Trainer createTrainer(@RequestBody Trainer trainer){
+        this.trainerService.createTrainer(trainer);
+        return trainer;
+    }
+
+    @PutMapping("/")
+    public Trainer updateTrainer(@RequestBody Trainer trainer) {
+        this.trainerService.updateTrainer(trainer);
+        return trainer;
+    }
+
+    @DeleteMapping("/{trainerName}")
+    public String deleteTrainer(@PathVariable("trainerName") String trainerName) {
+        this.trainerService.deleteTrainerByName(trainerName);
+        return trainerName + " was deleted";
+    }
+
 }
