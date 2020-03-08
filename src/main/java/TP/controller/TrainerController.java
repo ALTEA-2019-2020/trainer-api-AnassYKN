@@ -4,7 +4,6 @@ import TP.bo.Trainer;
 import TP.service.TrainerService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/trainers")

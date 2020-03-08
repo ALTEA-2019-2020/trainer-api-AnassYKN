@@ -5,6 +5,7 @@ import TP.repository.TrainerRepository;
 import TP.service.TrainerService;
 import org.springframework.stereotype.Service;
 
+
 import java.util.Optional;
 
 @Service
@@ -45,4 +46,6 @@ public class TrainerServiceImpl implements TrainerService {
     public void deleteTrainerByName(String trainerName) {
         this.trainerRepository.delete(getTrainer(trainerName));
     }
+
+
 }
