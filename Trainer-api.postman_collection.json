@@ -97,17 +97,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "security",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": ""
-				}
-			},
-			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
