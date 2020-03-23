@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "75f8e004-ef63-4dfe-9501-686cdcd480ad",
+		"name": "Trainer-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all trainers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trainer-api-anassykn.herokuapp.com/trainers/",
+					"protocol": "https",
+					"host": [
+						"trainer-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trainers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get trainer Ash",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trainer-api-anassykn.herokuapp.com/trainers/Ash",
+					"protocol": "https",
+					"host": [
+						"trainer-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trainers",
+						"Ash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post trainer Bug Catcher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Bug Catcher\",\r\n  \"team\": [\r\n    {\"pokemonTypeId\": 13, \"level\": 6},\r\n    {\"pokemonTypeId\": 10, \"level\": 6}\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://trainer-api-anassykn.herokuapp.com/trainers/",
+					"protocol": "https",
+					"host": [
+						"trainer-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trainers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete trainer Bug Catcher",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://trainer-api-anassykn.herokuapp.com/trainers/Bug%20Catcher",
+					"protocol": "https",
+					"host": [
+						"trainer-api-anassykn",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trainers",
+						"Bug%20Catcher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "security",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
