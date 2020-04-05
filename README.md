@@ -22,4 +22,8 @@ l'application est déployé sur l'adresse suivante : https://trainer-api-anassyk
 
 liste des routes est disponible sur le l'adresse suivante : https://trainer-api-anassykn.herokuapp.com/swagger-ui.html#/
 
+# PostMan
+
+Trainer-api.postman_collection.json pour testé les routes de l'api 
+
 Trainer-api-AnassYKN created by Anass Yakine
